@@ -15,7 +15,7 @@ class Board extends React.Component {
     super(props)
     this.state = {
       squares: Array(9).fill(null),
-      isNext: true,
+      xIsNext: true,
     }
   }
   handleClick(i) {
@@ -75,7 +75,5 @@ class Game extends React.Component {
     )
   }
 }
-
-// ========================================
 
 ReactDOM.render(<Game />, document.getElementById('root'))
